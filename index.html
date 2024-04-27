@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Budding Youth</title> <!-- only show in the tab and in the metadata -->
+  <link rel="icon" href="Images/logo2.webp">
+</head>
+
+<body>
+  <!-- Part 1: Navbar Starter Code -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div> <!-- end of navbar -->
+
+  <!--- Header --->
+  <div class="header-container revealable" id = "home">
+    <div class="header-item"> <!-- left side -->
+      <img id = "header-img" src = "Images/students-standing.webp"/>
+    </div>
+    <div class="header-item"> <!-- right side -->
+      <h1>Budding Youth</h1>
+      <h3 id = "sub-heading">Giving the youth the tools they need to get started</h3>
+      <div class = "header-button">
+        <button type="button">Contact</button>
+        <button type="button">Get Involved</button>
+      </div>
+    </div>
+  </div>  <!--- End Header --->
+  
+  <!--- About --->
+  <div class="about-container revealable" id = "about">
+    <div class="about-item">
+      <h2>About</h2>
+      <div>
+        <p>
+        Teens and preteens face numerous obstacles as they navigate adolescence. Academic struggles and financial challenges can take a toll on their well-being. Despite their desire to positively impact their communities, they may lack the resources to do so. This issue has become prevalent in many regions. This website is intended to shed light on these challenges and the existing resources available to help teens and preteens thrive throughout their journey.
+        </p>
+      </div>
+    </div>
+    <div class="about-video">
+      <iframe
+         width="560" height="315" src="https://www.youtube.com/embed/wn33cRGiGWM?si=3iJm5stOi-LbaWRl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+    </div>
+  </div> <!--- End About --->
+  
+  <!--- Data --->
+  <div class = "data-container revealable">
+    <div class="data-item">
+      <h2>Data</h2>
+    </div>
+    <div class="data-item">
+      <img src=""/>
+      <h4>Add some charts + captions that illustrate my topic and why it is a problem </h4>
+      <ul>
+          <li> less than 15%</li>
+          <li> 15%-25%</li>
+          <li> 25%-35%</li>
+          <li> 35%-45%</li>
+          <li> >45%</li>
+      </ul>
+    </div>
+  </div><!--- End Data --->
+
+  
+  <!--- Impact --->
+  <div class="impact-main revealable" id = "impact">
+    <h2 class = "impact-header">Impact!</h2>
+    <div class="impact-container">
+      <div class="impact-item">
+        <img id="icon" src="Images/icon.png" />
+        <h3>School and Academic Support</h3>
+        <p>
+          Providing academic support to students in need can be a valuable tool for improving their academic performance and preparing them for future opportunities.
+        </p>
+      </div>
+      <div class="impact-item">
+        <img id="icon-1" src="Images/icon-1.png" height="45%" width="45%"" />
+        <h3>Job Search and Career Development</h3>
+        <p>
+          Job search and career development can be a valuable tool for teens and preteens to gain access to a wide range of career opportunities.
+        </p>
+      </div>
+      <div class="impact-item">
+        <img id="icon-2" src="Images/icon-2.png" />
+        <h3>Financial Literacy</h3>
+        <p> 
+          Financial literacy is a crucial skill for teens and preteens to have in order to make informed decisions about their financial future.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Form -->
+  <div class="petition revealable">
+    <h2>Sign Our Petition 📢</h2>
+    <div class="petition-container">
+      <div class="petition-para">
+        <p>
+        Mental health is just as important as physical health, yet too many students struggle in silence due to a lack of support in our schools. It's time to change that.
+
+        We are calling on all students, parents, educators, and community members to join us in advocating for improved mental health support in schools. Our youth deserve access to resources and services that promote emotional well-being and provide assistance when needed.
+        </p>  
+      </div>
+
+      <div class="signatures">
+        <p>🖊️ Michael from Manhattan supports this.</p>
+        <p>🖊️ Sarah from Staten Island supports this.</p>
+        <p>🖊️ Jacob from Queens supports this.</p>
+        <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+      </div>
+    </div>
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <label for="hometown">Hometown:</label>
+      <input type="text" id="hometown" name="hometown">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+    </form>
+     <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Now</button>
+  </div>
+  
+  <!-- Modal -->
+  <div id="thanks-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id = "thanks-modal-content" >  </p>
+        <button id="close-modal"> Close </button>
+      </div>
+        <img id= "modal-img" src="Images/flower.gif" />
+    </div>
+  </div>
+
+  <!--- News ---> 
+  <div class="news-container revealable">
+    <h2 id = "news">Recent News</h2>
+  
+    <a class="" href="https://www.bgca.org/news-stories/2021/September/why-is-youth-empowerment-important/" target="_blank">
+        <article>
+            <h3>Why Is Youth Empowerment Important?</h3>
+            <p>Youth empowerment hinges on fostering belief in young people's potential, encouraging autonomy, honesty, and leadership, ultimately equipping them with the confidence and skills to navigate challenges and pursue their dreams, fostering active participation and contribution to society.</p>
+        </article>
+    </a>
+    <a class="" href="https://yourcommonwealth.org/youth-policy/empowering-the-future-the-need-for-youth-empowerment-in-the-society/" target="_blank">
+        <article>
+            <h3>Empowering the Future: The need for Youth Empowerment in the society</h3>
+            <p>Youth empowerment is vital for shaping a brighter future, involving their development, participation, and contribution across social, economic, and political spheres, underscoring the need to invest in youth for a better tomorrow.</p>
+        </article>
+    </a>
+  </div>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>

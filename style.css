@@ -1,0 +1,525 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #f8f3e3;  
+  font-family: Arial;
+  font-size: 16px;
+  color: #444;
+  margin: 0px;
+  pad: 0px;
+}
+
+/******** Headings ********/
+h1 {
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: #444
+}
+h2 {
+  margin-top: 50px;
+  margin: 0 auto;
+  font-size: 60px;
+  width: fit-content;
+  color: #ff7f50 
+}
+h3 {
+  font-size: 20px;
+  color: #555;
+}
+
+/* Paragraph */
+p {
+  color: #555
+}
+
+/* Button */
+button{
+  color: #555
+}
+
+
+/******** links ********/
+a:link {
+  color: #ff7f50;
+}
+a:visited {
+  text-decoration: underline;
+  color: #fd7608;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: #ff9966;
+}
+
+/******** Navbar ********/
+/* General style rule set for all items in ul */
+.navbar ul {
+  background-color: #ffada3;
+  box-shadow: 0px 10px 13px -10px #efaca3;
+  list-style: none;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1;
+}
+/* Style rule set for individual li */
+.navbar ul li {
+  margin: 0 10px;
+}
+/* Style rule set for individual li link */
+.navbar ul li a {
+  color:#fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  background-color: #fff;
+  color: #555;
+}
+/* Add style to button */
+#theme-button {
+  background-color: #ffffff;
+  border: none;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px 7px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#theme-button:hover {
+  background-color: #a1a1a1;
+}
+.navbar ul li:last-child {
+  margin-left: auto;
+}
+
+/******** Header ********/
+/* Header flex */
+.header-container {
+  background: linear-gradient(to top, #ffd29e, #ffada3); 
+  min-height: 400px;
+  margin-top: 45px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;  
+}
+.header-item:nth-of-type(1) {
+  width: 40%;
+  text-align: center;
+}
+.header-item:nth-of-type(2) {
+  width: 60%;
+  text-align: center;
+}
+.header-button button{
+  background-color: #ffaca3;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 130px;
+  height: 40px; 
+  margin-top: 10px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+.header-button button:hover {
+  background-color: #ffa947;
+}
+/* ids */
+#header-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.5);
+  width: 75%;
+  height: 75%;
+}
+#sub-heading{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/******** About ********/
+.about-container {
+  background-color: #ffada3;
+  width: 85%;
+  min-height: 400px;
+  border-radius: 30px;
+  margin: 20px auto;
+  margin-top: 50px;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about-item{
+  align-items: left;
+  width: 80%;
+}
+.about-item p {
+  font-size: 20px;
+  margin-left: 50px;
+}
+.about-video{
+  background-color: #ffd29e;
+  box-shadow: -11px 11px 15px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  height: 315px;
+  width: 600px;
+  position: relative; 
+  left: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe{
+  width: 90%;
+  height: 90%;
+  border-radius: 30px;
+}
+
+/******** impact ********/
+.impact-header {
+  grid-area: header;
+  justify-self: center;
+  margin-bottom: 20px;
+}
+.impact-container {
+  margin-top: 50px;
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 300px;
+}
+.impact-item {
+  margin-right: 30px;
+  background-color: #ffd29e;
+  border: 4px solid #f8f3e3;
+  outline: 3px solid #ffd29e;  
+  box-shadow: 10px 10px 0px 0px #ffd29e;
+  border-radius: 25px;
+  text-align: center;
+  min-height: 290px;
+  flex-basis: 100%;  
+}
+
+.impact-item img{
+  margin-top: 10px;
+  width: 10vw;
+  height: 10vw;
+}
+.impact-item h3, p{
+  margin: 5px 15px;
+}
+
+/******** Petition ********/
+.petition{
+  background-color: #ffada3;
+  border: 5px dotted #ffd29e;
+  border-radius: 30px;
+  margin: 30px auto;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.petition-container{
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 95%;
+  padding-bottom: 10px;
+}
+.petition-para{
+  font-size: 18px;
+  width: 55%;
+  padding-right: 10px;
+}
+signatures{
+  font-size: 18px;
+  width: 45%;
+  padding-right: 10px;
+}
+#sign-petition label{
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 20px;
+}
+#sign-petition input{
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.petition button{
+  border: none;
+  background-color: #ffd29e;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 130px;
+  height: 40px; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+.petition button:hover {
+  background-color: #ffa947;
+}
+.error {
+  background:pink;
+}
+
+/******** Modal ********/
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: #ffada3; /* update the colors and font sizes as you like */
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 30rem; /* sets a default width for the text container */
+  color: #ff7f50;
+  text-shadow: 3px 3px #ffd29e, 6px 6px #fc8803;
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#close-modal{
+  background-color: #ffd29e;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 130px;
+  height: 40px; 
+  margin-top: 10px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+#close-modal:hover{
+  background-color: #ffa947;
+}
+/******** News ********/
+.news-container{
+  background-color: #ffd29e;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 30px;
+}
+.news-container h3,p{
+  margin: 20px;
+}
+
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+*/
+
+
+ol {
+
+}
+
+ol li {
+
+}
+
+
+ul {
+
+}
+
+ul li {
+
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/******** for revealable ********/
+.revealable{
+  position: relative;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/******** Customize Dark Mode Theme ********/
+.dark-mode{
+  background-color: #444;
+  color: #f8f3e3;
+}
+.dark-mode h2{
+  color: #fbcf90;
+}
+/******** Dark Mode Paragraph ********/
+.dark-mode p{
+  color: #555;
+}
+/******** Dark Mode Button ********/
+.dark-mode button{
+  color: #555
+}
+/******** Dark Mode links ********/
+.dark-mode a:link {
+  color: #fbcf90;
+}
+.dark-mode a:visited {
+  text-decoration: underline;
+  color: #ff9966;
+}
+.dark-mode a:active {
+  color: #ff742e;
+}
+
+/******** Dark Mode Navbar ********/
+.dark-mode .navbar ul {
+  background-color: #fb574d; 
+  box-shadow: 0px 10px 13px -10px #eb564d;
+}
+.dark-mode .navbar ul li a {
+  color:#000000;
+}
+.dark-mode .navbar ul li a:hover {
+  background-color: #000000;
+  color: #918c86;
+}
+.dark-mode #theme-button {
+  background-color: #444;
+  color:#ffffff;
+  transition: background-color 0.3s ease;
+}
+.dark-mode #theme-button:hover {
+  background-color: #cccccc;
+}
+
+/******** Dark Mode Header ********/
+.dark-mode .header-container {
+  background: linear-gradient(to top, #fb7c48, #fb574d); 
+}
+.dark-mode .header-button button{
+  background-color: #fb574d;
+  transition: background-color 0.3s ease;
+}
+.dark-mode .header-button button:hover {
+  background-color: #fb5b4d;
+}
+
+/******** Dark Mode About ********/
+.dark-mode .about-container{
+  background-color: #fb574d;
+}
+.dark-mode .about-video{
+  background-color: #fb7c48;  
+}
+
+/******** Dark Mode Impact ********/
+.dark-mode .impact-item{
+  background-color: #fb7c48;
+  border: 4px solid #444;
+  outline: 3px solid #fb7c48;
+  box-shadow: 10px 10px 0px 0px #fb7c48;
+}
+
+/******** Dark Mode Petition ********/
+.dark-mode .petition{
+  background-color: #fb574d;
+  border: 5px dotted #fb7c48;
+}
+.dark-mode .petition button{
+  background-color: #fb7c48;
+}
+.dark-mode .petition button:hover {
+  background-color: #fb5b4d;
+}
+
+/******** Dark Mode Modal ********/
+.dark-mode .modal {
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* box that contains all the content and images */
+.dark-mode .modal-content {
+  background-color: #fb574d; 
+}
+.dark-mode #thanks-modal-content {
+  color: #fbcf90;
+  text-shadow: 3px 3px #fb7c48, 6px 6px #ff4800;
+}
+.dark-mode #close-modal{
+  background-color: #fb7c48;
+  transition: background-color 0.3s ease;
+}
+.dark-mode #close-modal:hover{
+  background-color: #fb5b4d;
+}
+
+/******** Dark Mode News ********/
+.dark-mode .news-container{
+  background-color: #fb7c48;
+}
